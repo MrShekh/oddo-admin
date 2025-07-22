@@ -130,39 +130,39 @@ const Users = () => {
     }
   };
 
-  const handleFlagSkill = async (user, skill) => {
-    try {
-      const res = await fetch(`${API_BASE}/api/admin/users/${user._id}/flag-skill`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify({ skill }),
-      });
-      if (!res.ok) throw new Error("Failed to flag skill");
-      alert("Skill flagged!");
-    } catch (err) {
-      alert("Error flagging skill: " + err.message);
-    }
-  };
+  // const handleFlagSkill = async (user, skill) => {
+  //   try {
+  //     const res = await fetch(`${API_BASE}/api/admin/users/${user._id}/flag-skill`, {
+  //       method: "PUT",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //         Authorization: `Bearer ${token}`,
+  //       },
+  //       body: JSON.stringify({ skill }),
+  //     });
+  //     if (!res.ok) throw new Error("Failed to flag skill");
+  //     alert("Skill flagged!");
+  //   } catch (err) {
+  //     alert("Error flagging skill: " + err.message);
+  //   }
+  // };
 
-  const handleUnflagSkill = async (user, skill) => {
-    try {
-      const res = await fetch(`${API_BASE}/api/admin/users/${user._id}/unflag-skill`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify({ skill }),
-      });
-      if (!res.ok) throw new Error("Failed to unflag skill");
-      alert("Skill unflagged!");
-    } catch (err) {
-      alert("Error unflagging skill: " + err.message);
-    }
-  };
+  // const handleUnflagSkill = async (user, skill) => {
+  //   try {
+  //     const res = await fetch(`${API_BASE}/api/admin/users/${user._id}/unflag-skill`, {
+  //       method: "PUT",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //         Authorization: `Bearer ${token}`,
+  //       },
+  //       body: JSON.stringify({ skill }),
+  //     });
+  //     if (!res.ok) throw new Error("Failed to unflag skill");
+  //     alert("Skill unflagged!");
+  //   } catch (err) {
+  //     alert("Error unflagging skill: " + err.message);
+  //   }
+  // };
 
   return (
     <div className="w-full">

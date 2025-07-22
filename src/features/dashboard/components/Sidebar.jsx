@@ -42,10 +42,10 @@ const Sidebar = ({ active, onNavigate }) => (
       </nav>
     </div>
     <div className="px-2 mt-10">
-      <a href="#" className="flex items-center text-gray-400 hover:text-indigo-400 text-sm">
+      {/* <a href="#" className="flex items-center text-gray-400 hover:text-indigo-400 text-sm">
         <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
         Back to SkillSwap
-      </a>
+      </a> */}
     </div>
   </aside>
 );
